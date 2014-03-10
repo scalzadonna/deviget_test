@@ -1,0 +1,52 @@
+Problem: #1
+A message display
+A backend api returns an array of messages in JSON to the frontend as follows. Each message has an id, message text and an indicator if its unread or not
+
+[
+{
+id: 1,
+message-text: "<p>This is a message text where new lines are </br> and there is some more text on another line whcih could span 2 lines</p> <h4>data table</h4> <div>lots more details <p> some paragraph info here</p> </div>",
+unread: true
+},
+{
+id: 2,
+message-text: "<p>This is a second message text which is a new message </br> and there is some more text on another line which could span 2 lines</p> <h4>data table</h4> <div>lots more details <p> some paragraph info here</p> </div>",
+unread: false
+},
+{
+id: 3,
+message-text: "<p>this is a very short message</p>",
+unread: false
+}
+]
+
+Requirements:
+------------
+The system 
+1. should display all messages (from the json array) in a list or series of divs
+
+I iterate over the JSON data array and create a <li> for each message, then attach it to a unordered list element.
+
+2. should display all the message-text if the message is unread (unread === true) or is the 1st message. This is the "expanded" format.
+
+I put a condition to check if it is a first element in the array or unread === true.
+
+3. should display only the 1st line of message-text, with ellipses (i.e. ...) at end if the message is read (unread === false) and is not the
+ 1st message. This is the "collapsed" format.
+note: only display the ellipses if there is more content than 1 line i.e. would not display ellipses for message id 3 but would for message id 2
+
+Take the text of the element, and then inspect for a close tag, if there's more than one close tag I understand that the text contains more than one line,
+and take the first line and then append '(...)' as string.
+
+4. should expand a collapsed message when the user clicks a collapsed message 
+5. should collapse an expanded message when user clicks on an expanded message
+Implemented a switch function to check relying on css class of the message, if it's already expanded, then collapse it.
+
+
+
+Please explain briefly how you solved each requirement.
+
+Please code a solution using html, javascript. 
+To keep it simple you can hardcode the json in the page or load from a static file.
+
+Time: 70 mins

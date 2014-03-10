@@ -1,1 +1,28 @@
+<html>
+
+<head>
+	<title>JSON render</title>
+	<script type="text/javascript" src="json-render.js"></script>
+    <style type="text/css">
+		body{font-family:'Verdana';}
+		ul{list-style-type:none;}
+		li.read-message{ background-color: #eee;}
+		li.unread-message{ background-color: #ccc; border-bottom:thick dotted #000;}
+		
+	</style>
+</head>
+
 <body>
+	<h1>JSON render</h1>
+	<div id="toolbar">
+			<button type="button" onclick="showMessages();">Retrieve messages</button>
+	</div>
+	<div id="center">
+		<ul id="messages-list">
+			<li>No messages to show</li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
