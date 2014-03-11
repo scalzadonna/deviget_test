@@ -49,4 +49,4 @@ Please explain briefly how you solved each requirement.
 Please code a solution using html, javascript. 
 To keep it simple you can hardcode the json in the page or load from a static file.
 
-Time: 70 mins
+Time spent: 70 mins

@@ -1,0 +1,11 @@
+
+Problem #3
+Create a simple context menu that floats over a page. Don't use any samples or libraries.
+- There is a button on the page and the menu pops up next to it when clicked
+- The menu should have at least 2 levels (submenus)
+- The content should be driven by a JSON object at the top of the script
+- Some menu items should go to URLs; some should be assigned Javascript functions
+- The menu should not go away until 2 seconds after you have rolled out of it or after you have selected an option
+- Style is not as important as function.
+
+Time spent: 90 mins
